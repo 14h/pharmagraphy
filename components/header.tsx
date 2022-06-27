@@ -4,7 +4,7 @@ import Link from 'next/link';
 import FirebaseAuth from './FirebaseAuth';
 
 type TProps = {
-    selected: 'about' | 'home' | 'services' | 'faq' | 'results';
+    selected: 'about' | 'home' | 'add-results' | 'faq' | 'results';
 }
 
 export const Header = ({selected}: TProps) => {
@@ -12,7 +12,7 @@ export const Header = ({selected}: TProps) => {
     const AuthUser = useAuthUser();
 
     return (
-        <div className='fixed w-full px-4 lg:px-16 text-white transition-all ease-in duration-75'>
+        <div className='fixed w-full px-4 lg:px-16 text-white transition-all ease-in duration-75 bg-black'>
             <div className='py-8 flex justify-between'>
                 <div className='flex flex-row justify-center items-center hidden lg:flex'>
                     <Link href='/'>
@@ -26,7 +26,7 @@ export const Header = ({selected}: TProps) => {
                         </div>
                     </Link>
                     <Link href='/about'>
-                        <div className={`p-2 px-8 transition-all ease-in duration-75 hover:bg-accent-6 cursor-pointer text-xl ${selected === 'results' ? 'bg-accent-5' : ''}`}>
+                        <div className={`p-2 px-8 transition-all ease-in duration-75 hover:bg-accent-6 cursor-pointer text-xl ${selected === 'add-results' ? 'bg-accent-5' : ''}`}>
                             ADD YOUR RESULTS
                         </div>
                     </Link>
@@ -59,7 +59,7 @@ export const Header = ({selected}: TProps) => {
                             </div>
                         </Link>
                         <Link href='/services'>
-                            <div className={`p-8 transition-all ease-in duration-75 hover:text-accent-8 cursor-pointer text-xl ${selected === 'services' ? 'text-accent-8' : ''}`}>
+                            <div className={`p-8 transition-all ease-in duration-75 hover:text-accent-8 cursor-pointer text-xl ${selected === 'add-results' ? 'text-accent-8' : ''}`}>
                                 Our services
                             </div>
                         </Link>

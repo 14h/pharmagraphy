@@ -15,7 +15,7 @@ const Results: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header selected='services'/>
+            <Header selected='results'/>
             <main className='pb-48'>
             </main>
 
