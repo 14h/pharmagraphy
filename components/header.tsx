@@ -25,7 +25,7 @@ export const Header = ({selected}: TProps) => {
                             TEST RESULTS
                         </div>
                     </Link>
-                    <Link href='/about'>
+                    <Link href='/add-results'>
                         <div className={`p-2 px-8 transition-all ease-in duration-75 hover:bg-accent-6 cursor-pointer text-xl ${selected === 'add-results' ? 'bg-accent-5' : ''}`}>
                             ADD YOUR RESULTS
                         </div>

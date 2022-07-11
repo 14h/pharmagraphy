@@ -1,12 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useState } from 'react';
-import { Header } from '../components/header';
-import { Footer } from '../components/footer';
-import { Animated } from '../components/animated';
-import Image from 'next/image';
+import { Footer } from '../../components/footer';
+import { Header } from '../../components/header';
 
-const Results: NextPage = () => {
+const Table: NextPage = () => {
     return (
         <>
             <Head>
@@ -24,4 +21,4 @@ const Results: NextPage = () => {
     );
 };
 
-export default Results;
+export default Table;
